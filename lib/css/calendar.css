@@ -1,0 +1,80 @@
+:root {
+    --shadow: 0 18px 50px rgba(0,0,0,.45);
+    --bg-dark: #0B0E14;
+    --card-bg: #161B22;
+    --neon-purple: #BB86FC;
+    --neon-blue: #00D1FF;
+    --text-main: #E0E0E0;
+    --text-muted: #8899A6;
+    --border-color: 1px solid rgba(187, 134, 252, 0.1);
+    --border-outline: 2px solid rgba(187, 134, 252, 0.2);
+    }
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--bg-dark);
+    color: white;
+}
+
+.dates {
+    padding: 15px 0px;
+    background-color: var(--card-bg);
+    color: var(--text-main);
+    border: var(--border-color);
+    border-radius: 10%;
+    transition: transform 120ms ease, box-shadow 100ms ease, border-color 100ms ease;
+    will-change: transform, box-shadow
+}
+
+.dates:hover {
+    cursor: pointer;
+    border-color: rgba(187, 134, 252, 0.35);
+    box-shadow: 
+        0 0 0 1px rgba(187, 134, 252, 0.2),
+        0 0 10px rgba(187, 134, 252, 0.25);
+}
+
+.dates:active {
+    transform: scale(0.98);
+    animation: neonPulse 300ms ease-out 1;
+}
+
+.dates:focus-visible {
+    outline: 2px solid rgba(0, 209, 255, 0.6);
+    outline-offset: 2px;
+}
+
+.calendar {
+    max-width: 50%;
+    box-shadow: var(--shadow);
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 10px;
+    margin-top: 10px;
+}
+
+@keyframes neonPulse {
+    0% {
+        box-shadow:
+            0 0 0 1px rgba(187, 134, 252, 0.25),
+            0 0 12px rgba(187, 134, 252, 0.25),
+            0 0 22px rgba(0, 209, 255, 0.18);
+    }
+
+    55% {
+        box-shadow:
+            0 0 0 2px rgba(187, 134, 252, 0.55),
+            0 0 18px rgba(187, 134, 252, 0.45),
+            0 0 38px rgba(0, 209, 255, 0.35);   
+    }
+
+    100% {
+        box-shadow:
+            0 0 0 1px rgba(187, 134, 252, 0.22),
+            0 0 10px rgba(187, 134, 252, 0.20),
+            0 0 18px rgba(0, 209, 255, 0.12);
+    }
+}

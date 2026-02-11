@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Kalenderblatt vom 09.02.2026</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="lib/css/test.css">
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <div class="titleWrap">
+        <div class="badge"><span class="dot"></span><span id="badgeText">Kalenderblatt</span></div>
+        <h1>Kalenderblatt vom <span id="dateTitle">09.02.2026</span></h1>
+        <p class="subtitle" id="subtitle">
+          Der 09.02.2026 ist ein Montag im Februar 2026. Es ist der zweite Montag im Februar, um genau zu sein.
+        </p>
+      </div>
+      <div class="badge" aria-label="Meta">
+        <span style="opacity:.75">📍</span>
+        <span id="metaText" style="color: rgba(234,240,255,.82); font-weight:600;">Februar 2026 · KW 7</span>
+      </div>
+    </header>
+
+    <section class="grid">
+      <!-- Kalender -->
+      <article class="card">
+        <div class="cardHeader">
+          <h2>Monatsübersicht</h2>
+          <div class="pill" id="monthPill">Februar 2026</div>
+        </div>
+
+        <div class="cardBody calendar">
+          <div class="dow">
+            <span>Mo</span><span>Di</span><span>Mi</span><span>Do</span><span>Fr</span><span>Sa</span><span>So</span>
+          </div>
+          <div class="days" id="days"></div>
+
+          <div class="calendarFooter" id="footerText"></div>
+        </div>
+      </article>
+
+      <!-- Ereignisse -->
+      <article class="card">
+        <div class="cardHeader">
+          <h2>Historische Ereignisse</h2>
+          <div class="pill">9. Februar</div>
+        </div>
+
+        <div class="cardBody">
+          <div class="events">
+            <div class="event">
+              <div class="year">1111</div>
+              <p><b>Vergleich von Sutri</b> <span>– Heinrich V. und Papst Paschalis II. einigen sich; Tumulte bei der Kaiserkrönung.</span></p>
+            </div>
+
+            <div class="event">
+              <div class="year">1775</div>
+              <p><b>Massachusetts</b> <span>– Britische Regierung erklärt die Kolonie zur abtrünnigen Provinz; Vorzeichen des Unabhängigkeitskriegs.</span></p>
+            </div>
+
+            <div class="event">
+              <div class="year">1801</div>
+              <p><b>Friede von Lunéville</b> <span>– Ende des Zweiten Koalitionskriegs; Frankreich erhält linksrheinische Gebiete.</span></p>
+            </div>
+
+            <div class="event">
+              <div class="year">1920</div>
+              <p><b>Spitzbergenvertrag</b> <span>– Unterzeichnung; Norwegen erhält Souveränität, Spitzbergen als entmilitarisierte Zone.</span></p>
+            </div>
+
+            <div class="event">
+              <div class="year">1934</div>
+              <p><b>Balkanpakt</b> <span>– Türkei, Griechenland, Rumänien und Jugoslawien schließen Militärbündnis.</span></p>
+            </div>
+          </div>
+        </div>
+      </article>
+    </section>
+  </div>
+
+  <script src="lib/js/test.js"></script>
+</body>
+</html>

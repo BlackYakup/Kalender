@@ -1,0 +1,16 @@
+.wochentag {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.samstag {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: lightskyblue;
+}
+
+.sonntag {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: red;
+}
