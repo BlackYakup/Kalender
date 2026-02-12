@@ -12,3 +12,10 @@ body {
     gap: 10px;
     padding: 20px;
 }
+
+.day {
+    font-size: 1.2em;
+    width: 75px;
+    height: 75px;
+    border-radius: 10px;
+}
